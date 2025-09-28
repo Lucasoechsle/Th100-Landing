@@ -6,7 +6,6 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Navbar */}
       <Navbar />
-
       {/* Hero Banner */}
       <div className="relative h-[400px] bg-gray-800">
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-center px-4">
@@ -16,7 +15,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* About Section */}
       <section id="nosotros" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -30,7 +28,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Products Section */}
       <section id="productos" className="py-16">
         <div className="max-w-7xl mx-auto px-4">
@@ -41,7 +38,6 @@ export default function Home() {
               Descubre nuestra selección de baterías de alta calidad diseñadas para maximizar el rendimiento de tu moto.
             </p>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[1, 2, 3, 4].map((id) => (
               <div key={id} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
@@ -55,7 +51,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-
           <div className="text-center mt-12">
             <Link
               href="/productos"
@@ -66,7 +61,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Contact Section */}
       <section id="contacto" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -80,7 +74,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-blue-600 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
@@ -131,4 +124,3 @@ export default function Home() {
     </div>
   )
 }
-

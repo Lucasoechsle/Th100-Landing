@@ -45,7 +45,6 @@ export default function ProductsPage() {
           </div>
         </div>
       </nav>
-
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -55,7 +54,6 @@ export default function ProductsPage() {
               Explora nuestra amplia gama de baterías para todo tipo de motos
             </p>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <Link key={product.id} href={`/productos/${product.id}`}>
@@ -73,7 +71,6 @@ export default function ProductsPage() {
           </div>
         </div>
       </div>
-
       {/* Footer */}
       <footer className="bg-blue-600 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
@@ -124,4 +121,3 @@ export default function ProductsPage() {
     </div>
   )
 }
-

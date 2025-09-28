@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { ChevronLeft, ChevronRight } from "lucide-react"
@@ -68,7 +67,6 @@ const Carousel = () => {
           </div>
         </div>
       ))}
-
       <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70"
@@ -83,7 +81,6 @@ const Carousel = () => {
       >
         <ChevronRight size={24} />
       </button>
-
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {banners.map((_, index) => (
           <button
@@ -99,4 +96,3 @@ const Carousel = () => {
 }
 
 export default Carousel
-

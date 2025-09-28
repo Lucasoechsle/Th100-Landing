@@ -1,5 +1,4 @@
 "use client"
-
 import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
@@ -48,7 +47,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
@@ -96,4 +94,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-

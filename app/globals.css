@@ -16,10 +16,12 @@
   --popover-foreground: 222.2 84% 4.9%;
 
   /* Colores exactos de la imagen TH100 */
-  --primary: 214 80% 40%; /* Azul brillante de las cajas TH100 */
+  --primary: 214 80% 40%;
+  /* Azul brillante de las cajas TH100 */
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 358 85% 50%; /* Rojo de la franja en las cajas */
+  --secondary: 358 85% 50%;
+  /* Rojo de la franja en las cajas */
   --secondary-foreground: 0 0% 100%;
 
   --muted: 210 40% 96.1%;
@@ -77,8 +79,8 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
-

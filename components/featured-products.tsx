@@ -43,7 +43,6 @@ const FeaturedProducts = () => {
             Descubre nuestra selección de baterías de alta calidad diseñadas para maximizar el rendimiento de tu moto.
           </p>
         </div>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product) => (
             <Link key={product.id} href={`/productos/${product.id}`}>
@@ -64,7 +63,6 @@ const FeaturedProducts = () => {
             </Link>
           ))}
         </div>
-
         <div className="text-center mt-12">
           <Link
             href="/productos"
@@ -79,4 +77,3 @@ const FeaturedProducts = () => {
 }
 
 export default FeaturedProducts
-

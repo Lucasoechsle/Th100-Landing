@@ -1,7 +1,5 @@
 "use client"
-
 import type React from "react"
-
 import { useState } from "react"
 import { Send } from "lucide-react"
 
@@ -23,7 +21,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Aquí iría la lógica para enviar el formulario
     console.log("Formulario enviado:", formData)
     alert("Gracias por contactarnos. Te responderemos a la brevedad.")
     setFormData({
@@ -45,7 +42,6 @@ const ContactForm = () => {
             contigo.
           </p>
         </div>
-
         <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="bg-primary p-8 text-white">
@@ -141,4 +137,3 @@ const ContactForm = () => {
 }
 
 export default ContactForm
-

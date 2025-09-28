@@ -12,7 +12,6 @@ const AboutSection = () => {
             innovación.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-80 md:h-96">
             <Image
@@ -50,4 +49,3 @@ const AboutSection = () => {
 }
 
 export default AboutSection
-

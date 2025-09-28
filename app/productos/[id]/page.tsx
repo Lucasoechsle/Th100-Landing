@@ -61,13 +61,11 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           </div>
         </div>
       </nav>
-
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <Link href="/productos" className="text-blue-600 hover:text-blue-800 flex items-center mb-8">
             ← Volver a Productos
           </Link>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="h-80 bg-blue-50 rounded-lg flex items-center justify-center">
               <div className="text-blue-300 text-8xl">TH100</div>
@@ -76,7 +74,6 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               <h1 className="text-3xl font-bold text-gray-800">{product.name}</h1>
               <div className="w-16 h-1 bg-red-600 my-4"></div>
               <p className="text-lg text-gray-600 mb-6">{product.description}</p>
-
               <div className="bg-gray-50 p-6 rounded-lg mb-8">
                 <h2 className="text-xl font-semibold text-gray-800 mb-4">Especificaciones</h2>
                 <ul className="space-y-2">
@@ -88,10 +85,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                   ))}
                 </ul>
               </div>
-
               <h2 className="text-xl font-semibold text-gray-800 mb-4">Descripción</h2>
               <p className="text-gray-600">{product.longDescription}</p>
-
               <div className="mt-8">
                 <Link
                   href="/#contacto"
@@ -104,7 +99,6 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
           </div>
         </div>
       </div>
-
       {/* Footer */}
       <footer className="bg-blue-600 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
@@ -155,4 +149,3 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     </div>
   )
 }
-
