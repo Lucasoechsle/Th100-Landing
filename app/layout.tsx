@@ -8,7 +8,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "TH100 - Baterías para Motos",
   description: "Baterías de alta calidad para todo tipo de motos",
-  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -22,5 +21,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-import './globals.css'
