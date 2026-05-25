@@ -3,8 +3,13 @@ import CatalogFooter from "@/components/catalog-footer"
 import CatalogNavbar from "@/components/catalog-navbar"
 import { productDetails } from "@/lib/products"
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const productId = Number.parseInt(params.id)
+export default async function ProductDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  const { id } = await params
+  const productId = Number.parseInt(id)
   const product = productDetails.find((p) => p.id === productId) || productDetails[0]
 
   return (

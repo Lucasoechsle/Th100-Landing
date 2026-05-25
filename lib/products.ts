@@ -2,7 +2,6 @@ export type ProductSummary = {
   id: number
   name: string
   description: string
-  category: "standard" | "premium" | "eco"
 }
 
 export type ProductDetail = ProductSummary & {
@@ -15,37 +14,31 @@ export const productsCatalog: ProductSummary[] = [
     id: 1,
     name: "TH100 Standard",
     description: "Batería estándar para motos de baja cilindrada",
-    category: "standard",
   },
   {
     id: 2,
     name: "TH100 Pro",
     description: "Batería de alto rendimiento para motos deportivas",
-    category: "premium",
   },
   {
     id: 3,
     name: "TH100 Endurance",
     description: "Batería de larga duración para viajes extensos",
-    category: "premium",
   },
   {
     id: 4,
     name: "TH100 Eco",
     description: "Batería ecológica con menor impacto ambiental",
-    category: "eco",
   },
   {
     id: 5,
     name: "TH100 Sport",
     description: "Diseñada específicamente para motos deportivas",
-    category: "premium",
   },
   {
     id: 6,
     name: "TH100 Classic",
     description: "Ideal para motos clásicas y de colección",
-    category: "standard",
   },
 ]
 
@@ -54,7 +47,6 @@ export const productDetails: ProductDetail[] = [
     id: 1,
     name: "TH100 Standard",
     description: "Batería estándar para motos de baja cilindrada",
-    category: "standard",
     details: [
       "Capacidad: 12V 4Ah",
       "Dimensiones: 114 x 71 x 106 mm",
@@ -69,7 +61,6 @@ export const productDetails: ProductDetail[] = [
     id: 2,
     name: "TH100 Pro",
     description: "Batería de alto rendimiento para motos deportivas",
-    category: "premium",
     details: [
       "Capacidad: 12V 8Ah",
       "Dimensiones: 150 x 87 x 105 mm",

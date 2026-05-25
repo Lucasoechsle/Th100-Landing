@@ -17,22 +17,22 @@ const Navbar = () => {
           <div className="flex items-center">
             <span className="text-2xl font-bold text-white">TH100</span>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-white hover:text-gray-200 font-medium">
+          <div className="hidden md:flex flex-nowrap items-center gap-8">
+            <Link href="/" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
               Inicio
             </Link>
-            <Link href="/#nosotros" className="text-white hover:text-gray-200 font-medium">
+            <Link href="/#nosotros" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
               Nosotros
             </Link>
-            <Link href="/#productos" className="text-white hover:text-gray-200 font-medium">
+            <Link href="/#productos" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
               Productos
             </Link>
-            <Link href="/#contacto" className="text-white hover:text-gray-200 font-medium">
+            <Link href="/#contacto" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
               Contacto
             </Link>
             <Link
               href="/productos"
-              className="bg-secondary text-white px-4 py-2 rounded-md hover:bg-opacity-90 font-medium"
+              className="inline-flex items-center whitespace-nowrap rounded-md bg-secondary px-4 py-2 font-medium text-white hover:bg-opacity-90"
             >
               Ver Catálogo
             </Link>
