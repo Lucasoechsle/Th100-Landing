@@ -3,11 +3,18 @@ import { useState } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 
+const NAVIGATION_ITEMS = [
+  { href: "/", label: "Inicio" },
+  { href: "/#nosotros", label: "Nosotros" },
+  { href: "/#productos", label: "Productos" },
+  { href: "/#contacto", label: "Contacto" },
+]
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
+    setIsOpen((isOpen) => !isOpen)
   }
 
   return (
@@ -18,18 +25,15 @@ const Navbar = () => {
             <span className="text-2xl font-bold text-white">TH100</span>
           </div>
           <div className="hidden md:flex flex-nowrap items-center gap-8">
-            <Link href="/" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
-              Inicio
-            </Link>
-            <Link href="/#nosotros" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
-              Nosotros
-            </Link>
-            <Link href="/#productos" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
-              Productos
-            </Link>
-            <Link href="/#contacto" className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200">
-              Contacto
-            </Link>
+            {NAVIGATION_ITEMS.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="inline-flex items-center whitespace-nowrap font-medium text-white hover:text-gray-200"
+              >
+                {item.label}
+              </Link>
+            ))}
             <Link
               href="/productos"
               className="inline-flex items-center whitespace-nowrap rounded-md bg-secondary px-4 py-2 font-medium text-white hover:bg-opacity-90"
@@ -51,34 +55,16 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-primary">
-            <Link
-              href="/"
-              className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 font-medium"
-              onClick={toggleMenu}
-            >
-              Inicio
-            </Link>
-            <Link
-              href="/#nosotros"
-              className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 font-medium"
-              onClick={toggleMenu}
-            >
-              Nosotros
-            </Link>
-            <Link
-              href="/#productos"
-              className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 font-medium"
-              onClick={toggleMenu}
-            >
-              Productos
-            </Link>
-            <Link
-              href="/#contacto"
-              className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 font-medium"
-              onClick={toggleMenu}
-            >
-              Contacto
-            </Link>
+            {NAVIGATION_ITEMS.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="block px-3 py-2 rounded-md text-white hover:bg-blue-700 font-medium"
+                onClick={toggleMenu}
+              >
+                {item.label}
+              </Link>
+            ))}
             <Link
               href="/productos"
               className="block px-3 py-2 rounded-md bg-secondary text-white hover:bg-red-600 font-medium"

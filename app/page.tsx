@@ -2,6 +2,8 @@ import Link from "next/link"
 import CatalogFooter from "@/components/catalog-footer"
 import Navbar from "@/components/navbar"
 
+const FEATURED_PRODUCT_IDS = [1, 2, 3, 4]
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
@@ -40,7 +42,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((id) => (
+            {FEATURED_PRODUCT_IDS.map((id) => (
               <div key={id} className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
                 <div className="h-48 bg-blue-50 flex items-center justify-center">
                   <div className="text-blue-300 text-6xl">TH100</div>
